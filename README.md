@@ -1,6 +1,4 @@
-````markdown
-Live Demo:
-CampusConnect – Live Demo
+
 # 🎓 Student Registration & Result Portal
 
 A responsive student portal built using **HTML5, CSS3, Bootstrap 5, and JavaScript**.
@@ -18,7 +16,7 @@ A responsive student portal built using **HTML5, CSS3, Bootstrap 5, and JavaScri
 HTML5 • CSS3 • Bootstrap 5 • JavaScript
 
 Live Demo:
-CampusConnect – Live Demo
+ https://mahalak20607-ux.github.io/student-portal/
       
 
 
