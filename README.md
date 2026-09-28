@@ -28,11 +28,9 @@ student-portal/
 ├── style.css
 ├── script.js
 └── README.md
-````
+
 
 ## 👩‍💻 Author
 
 **Mahalakshmi S**
 
-```
-```
