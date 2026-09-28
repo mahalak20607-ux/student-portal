@@ -16,7 +16,7 @@ A responsive student portal built using **HTML5, CSS3, Bootstrap 5, and JavaScri
 HTML5 • CSS3 • Bootstrap 5 • JavaScript
 
 ## 🌐 Demo
-      https://mahalak20607-ux.github.io/student-portal/
+      CampusConnect – Live Demo
 
 
 
