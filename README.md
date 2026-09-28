@@ -16,11 +16,12 @@ A responsive student portal built using **HTML5, CSS3, Bootstrap 5, and JavaScri
 HTML5 • CSS3 • Bootstrap 5 • JavaScript
 
 ## 🌐 Demo
-[Live Demo]https://mahalak20607-ux.github.io/student-portal/
+[Live Demo]
+      https://mahalak20607-ux.github.io/student-portal/
 
 
 ## 📂 Structure
-```text
+
 student-portal/
 ├── index.html
 ├── style.css
