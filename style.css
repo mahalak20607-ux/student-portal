@@ -1,0 +1,449 @@
+/* =========================================
+   GLOBAL
+========================================= */
+
+:root {
+    --primary: #4f46e5;
+    --primary-dark: #3730a3;
+    --secondary: #7c3aed;
+    --dark: #111827;
+    --text: #374151;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --light: #f8fafc;
+    --white: #ffffff;
+    --success: #15803d;
+    --danger: #dc2626;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f7fb;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    background: #111827;
+    padding: 16px 0;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+}
+
+.navbar-brand i {
+    color: #818cf8;
+    margin-right: 8px;
+}
+
+.nav-link {
+    color: #d1d5db !important;
+    margin-left: 15px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ffffff !important;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero-section {
+    background:
+        linear-gradient(
+            135deg,
+            #312e81,
+            #4f46e5,
+            #7c3aed
+        );
+
+    padding: 75px 20px;
+    color: white;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 7px 16px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50px;
+    background: rgba(255,255,255,0.12);
+    font-size: 0.85rem;
+    margin-bottom: 18px;
+}
+
+.hero-section h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.hero-section h1 span {
+    display: block;
+    color: #c7d2fe;
+}
+
+.hero-section p {
+    max-width: 650px;
+    margin: auto;
+    color: #e0e7ff;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.portal-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 32px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--border);
+}
+
+.icon-box {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef2ff;
+    color: var(--primary);
+    border-radius: 12px;
+    font-size: 1.4rem;
+}
+
+.section-heading h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 3px;
+}
+
+.section-heading p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-label {
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.form-control,
+.form-select {
+    min-height: 48px;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    padding: 10px 14px;
+    transition: 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+
+/* =========================================
+   MARKS
+========================================= */
+
+.marks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    border-radius: 10px;
+    background: #f8fafc;
+    border: 1px solid var(--border);
+}
+
+.marks-header h5 {
+    margin: 0;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.marks-header h5 i {
+    color: var(--primary);
+    margin-right: 7px;
+}
+
+.marks-header span {
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.submit-btn {
+    min-height: 48px;
+    padding: 0 25px;
+    background: var(--primary);
+    border: none;
+    border-radius: 9px;
+    font-weight: 600;
+}
+
+.submit-btn:hover {
+    background: var(--primary-dark);
+}
+
+.reset-btn {
+    min-height: 48px;
+    margin-left: 8px;
+    padding: 0 22px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   RESULTS HEADING
+========================================= */
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.section-title span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--primary);
+}
+
+.section-title h2 {
+    margin-top: 4px;
+    color: var(--dark);
+    font-weight: 800;
+}
+
+.student-count {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid var(--border);
+    color: var(--muted);
+}
+
+.student-count i {
+    color: var(--primary);
+    margin-right: 5px;
+}
+
+.student-count strong {
+    color: var(--dark);
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.empty-state {
+    background: white;
+    border: 1px dashed #cbd5e1;
+    border-radius: 16px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.empty-state i {
+    font-size: 3rem;
+    color: #a5b4fc;
+}
+
+.empty-state h4 {
+    margin-top: 15px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.empty-state p {
+    color: var(--muted);
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.table-wrapper {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.table {
+    margin: 0;
+}
+
+.table thead th {
+    background: #f8fafc;
+    color: #475569;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 16px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+}
+
+.table tbody td {
+    padding: 16px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.student-name {
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.register-number {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.result-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.result-pass {
+    background: #dcfce7;
+    color: var(--success);
+}
+
+.result-fail {
+    background: #fee2e2;
+    color: var(--danger);
+}
+
+.delete-btn {
+    border: none;
+    background: #fee2e2;
+    color: var(--danger);
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+}
+
+.delete-btn:hover {
+    background: #fecaca;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    margin-top: 70px;
+    padding: 35px 20px;
+    background: #111827;
+    color: #9ca3af;
+}
+
+footer p {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+footer small {
+    color: #6b7280;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding: 55px 20px;
+    }
+
+    .portal-card {
+        padding: 22px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+    }
+
+    .section-title {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .marks-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .submit-btn,
+    .reset-btn {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
